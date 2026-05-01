@@ -1,0 +1,18 @@
+{
+  "name": "sotility-protocol-deployment",
+  "version": "1.0.0",
+  "description": "Sotility Protocol smart contract deployment to Base Sepolia testnet",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network baseSepolia",
+    "verify": "hardhat verify --network baseSepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.28.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1",
+    "dotenv": "^16.6.1"
+  }
+}
